@@ -28,7 +28,7 @@ const text: React.CSSProperties = {
 
 const disappearBeforeEnd = 20;
 
-export const Overlay: React.FC = () => {
+export const Overlay2: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
 
@@ -57,8 +57,8 @@ export const Overlay: React.FC = () => {
       position: "absolute",
       backgroundColor: "white",
       borderRadius: 25,
-      left: 90,
-      bottom: 90,
+      right: 90,
+      top: 90,
       scale: String(scale),
       translate: `0 ${outY}px`,
       rotate: `${rotate}rad`,
@@ -69,8 +69,8 @@ export const Overlay: React.FC = () => {
   return (
     <AbsoluteFill>
       <div style={container}>
-        <div style={title}>warning!</div>
-        <div style={text}>your laptop is overheating</div>
+        <div style={title}>hello!</div>
+        <div style={text}>i am second overlay</div>
       </div>
 
     </AbsoluteFill>

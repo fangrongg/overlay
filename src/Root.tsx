@@ -1,13 +1,13 @@
 import "./index.css";
 import { Composition } from "remotion";
-import { Overlay } from "./Overlay";
+import { CombinedVideo } from "./CombinedVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
       <Composition
-        id="Overlay"
-        component={Overlay}
+        id="CombinedVideo"
+        component={CombinedVideo}
         durationInFrames={75}
         fps={30}
         width={1920}
